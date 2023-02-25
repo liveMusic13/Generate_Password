@@ -1,0 +1,128 @@
+@import "_nullstyle";
+@import "_fonts";
+
+[class*="__container"] {
+  max-width: 1087px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+@import "_header";
+@import "_footer";
+
+body {
+  background-image: url(../img/white-wood.jpg);
+  font-size: 20px;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.generate {}
+
+.generate__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.generate__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.generate__block-result-input {
+  display: flex;
+  gap: 20px;
+}
+
+.generate__result-input {
+  width: 300px;
+  height: 50px;
+  border-radius: 20px;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  box-shadow: 0px 0px 15px black;
+
+  &:hover {
+    border: 2px solid black;
+  }
+}
+
+.generate__result-button {
+  width: 70px;
+  height: 50px;
+  border-radius: 20px;
+  outline: none;
+  background-color: white;
+  box-shadow: 0px 0px 15px black;
+
+  &:hover {
+    border: 2px solid black;
+  }
+}
+
+.generate__customize {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.generate__block-slider {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.generate__slider {
+  appearance: none;
+  background-color: black;
+  opacity: 0.7;
+  border-radius: 20px;
+  height: 20px;
+  width: 170px;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+  }
+}
+
+.generate__result-slider {
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  padding: 5px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.generate__block-characters {
+  display: flex;
+  gap: 12px;
+}
+
+.generate__block-checbox {}
+
+.generate__checbox {}
