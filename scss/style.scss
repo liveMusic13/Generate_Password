@@ -48,6 +48,7 @@ body {
 .generate__block-result-input {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 
 .generate__result-input {
@@ -62,6 +63,12 @@ body {
   &:hover {
     border: 2px solid black;
   }
+
+  @media (max-width: 425px) {
+    width: 250px;
+    height: 45px;
+  }
+
 }
 
 .generate__result-button {
@@ -74,6 +81,12 @@ body {
 
   &:hover {
     border: 2px solid black;
+  }
+
+  @media (max-width: 425px) {
+    width: 50px;
+    height: 35px;
+    font-size: 12px;
   }
 }
 
